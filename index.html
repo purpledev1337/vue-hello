@@ -10,8 +10,10 @@
 <body>
 
     <div id="root">
-        <h1>{{message}}</h1>
-        <img v-bind:src="source" alt="">
+        <h1 :class="color">{{message}}</h1>
+        <button @click="changeColor">Cambia il colore del testo</button>
+        <button @click="changeImg">Cambia l'immagine</button>
+        <img :src="source" alt="">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
